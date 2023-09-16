@@ -1,3 +1,16 @@
-@import './reset.scss';
-@import "./common.scss";
-@import "./variables.scss";
+/* the props */
+@import "open-props/style";
+
+body {
+  background-color: var(--blue-5);
+}
+button.blue {
+  color: var(--blue-6);
+  background-color: var(--blue-0);
+  border: 1px solid var(--blue-1);
+  text-shadow: 0 1px 0 var(--blue-2);
+
+  &:hover {
+    background-color: var(--blue-1);
+  }
+}
