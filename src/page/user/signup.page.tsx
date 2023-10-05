@@ -1,15 +1,9 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
 
 const LoginPage = () => {
   const [email, setEmail] = useState("");
   const [pw, setPw] = useState("");
-
-  const navigate = useNavigate();
-
-  const navigateToSignup = () => {
-    navigate("/signup");
-  };
+  const [nickNm, setnickNm] = useState("");
 
   return (
     <div className="content-wrap">
@@ -26,11 +20,14 @@ const LoginPage = () => {
       </div>
 
       <div className="error-message">영문 숫자 특수문자를 포함한 8자 이상을 입력해주세요.</div>
-      <button className="primary" onClick={navigateToSignup}>
-        회원가입
-      </button>
+
+      <p className="cont-tit">패스워드</p>
+      <div className="input-wrap">
+        <input type="password" placeholder="패스워드를 입력해주세요." value={nickNm} onChange={e => setnickNm(e.target.value)} />
+      </div>
+
       <div className="bottom-btn">
-        <button className="bottom">로그인</button>
+        <button className="bottom">회원가입</button>
       </div>
     </div>
   );

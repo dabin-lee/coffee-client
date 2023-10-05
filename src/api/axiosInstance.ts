@@ -12,7 +12,9 @@ export default class Axios {
 
   constructor() {
     this.instance = axiosInstance
+  }
 
+  init() {
     // 토큰 실어주기
     this.instance.interceptors.request.use(
       config => {

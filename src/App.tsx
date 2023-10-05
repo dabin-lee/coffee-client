@@ -1,11 +1,11 @@
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom"
-import DefaultTemplate from "./template/default.template"
-import ProductListPage from "./page/product/product-list.page"
-import ProductDetailPage from "./page/product/product-detail.page"
-import DashboardPage from "./page/product/dashboard.page"
-import LoginPage from "./page/user/login.page"
-import LoginTemplate from "./template/login.template"
-
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import DefaultTemplate from "./template/default.template";
+import ProductListPage from "./page/product/product-list.page";
+import ProductDetailPage from "./page/product/product-detail.page";
+import DashboardPage from "./page/product/dashboard.page";
+import LoginPage from "./page/user/login.page";
+import SignupPage from "./page/user/signup.page";
+import LoginTemplate from "./template/login.template";
 // import { QueryClientProvider } from 'react-query'
 
 // import { ReactQueryDevtools } from 'react-query/devtools'
@@ -31,12 +31,15 @@ const App = () => {
           <Route path="/login" element={<LoginTemplate></LoginTemplate>}>
             <Route path="" element={<LoginPage></LoginPage>}></Route>
           </Route>
+
+          {/* login template */}
+          <Route path="/signup" element={<SignupPage></SignupPage>}></Route>
         </Routes>
       </BrowserRouter>
       {/* <ReactQueryDevtools initialIsOpen={false} />
       </QueryClientProvider> */}
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;
