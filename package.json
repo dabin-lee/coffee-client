@@ -40,9 +40,9 @@
   "prettier": {
     "singleQuote": false,
     "semi": true,
-    "printWidth": 160,
-    "arrowParens": "avoid"
+    "printWidth": 160
   },
   "main": "index.js",
   "license": "MIT"
 }
+
