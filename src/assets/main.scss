@@ -10,11 +10,32 @@
   padding: var(--size-3);
 }
 
-h2.title {
+h2 {
   color: var(--gray-5);
   font-family: Rebond Grotesque;
   font-size: 32px;
   font-weight: var(--font-weight-7);
+  text-align: center;
+  margin-top: var(--size-5);
+  max-inline-size: none;
+  &.main-tit {
+    font-size: var(--font-size-5);
+  }
+  &.tit {
+    font-size: var(--font-size-2);
+  }
+}
+
+// main
+.main {
+  .main-cont {
+    margin-top: var(--size-8);
+
+    p {
+      margin-top: var(--size-8);
+      text-align: center;
+    }
+  }
 }
 
 // button-wrap
@@ -23,8 +44,9 @@ div.bottom-btn {
   bottom: 0;
   left: 0;
   padding: var(--size-3);
-  margin: 0 auto;
   width: 100%;
+  margin: 0 auto;
+  margin-bottom: var(--size-5);
 }
 button {
   width: 100%;

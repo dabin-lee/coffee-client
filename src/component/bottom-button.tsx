@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router-dom";
+import FullScreenDialog from "./modal-bottom";
 
 const BottomButton = (btnType: any) => {
   const navigate = useNavigate();
@@ -11,6 +12,7 @@ const BottomButton = (btnType: any) => {
       <button className="bottom" onClick={moveRoute}>
         {btnType.tit}
       </button>
+      <FullScreenDialog />
     </div>
   );
 };

@@ -1,0 +1,34 @@
+/* the props */
+@import "https://unpkg.com/open-props";
+@import "https://unpkg.com/open-props/normalize.min.css";
+@import "https://unpkg.com/open-props/buttons.min.css";
+
+button.back {
+  display: block;
+  position: fixed;
+  top: var(--size-1);
+  left: var(--size-1);
+  margin: 10px;
+
+  width: 44px;
+  height: 44px;
+  background-color: #fff;
+  border-radius: 99%;
+
+  i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 22px;
+    height: 22px;
+    background-color: var(--gray-12);
+    mask-image: url("../../public/images/icon/arrow.left.svg");
+    mask-repeat: no-repeat;
+    mask-position: center center;
+    -webkit-mask-image: url("../../public/images/icon/arrow.left.svg");
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center center;
+
+    transform: translate(-50%, -50%);
+  }
+}

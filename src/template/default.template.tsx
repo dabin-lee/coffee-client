@@ -1,14 +1,13 @@
-
-import { Outlet } from 'react-router-dom'
-import { GnbLayout } from '../layout/gnb.layout'
+import { Outlet } from "react-router-dom";
+import { GnbLayout } from "../layout/gnb.layout";
 
 const DefaultTemplate = () => {
-    return (
-        <>
-            <GnbLayout></GnbLayout>
-            <Outlet></Outlet>
-        </>
-    )
-}
+  return (
+    <>
+      {/* <GnbLayout></GnbLayout> */}
+      <Outlet></Outlet>
+    </>
+  );
+};
 
-export default DefaultTemplate
+export default DefaultTemplate;

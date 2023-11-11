@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+
 import DefaultTemplate from "./template/default.template";
 import ProductListPage from "./page/product/product-list.page";
 import ProductDetailPage from "./page/product/product-detail.page";
